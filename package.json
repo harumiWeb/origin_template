@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:css --style=compressed",
+    "build:css": "sass sass:css --style=compressed && postcss css/*.css --use autoprefixer -d css/",
+    "watch:css": "nodemon --watch sass -e scss --exec \"npm run build:css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "nodemon": "^3.1.4",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.77.6"
+  }
+}
