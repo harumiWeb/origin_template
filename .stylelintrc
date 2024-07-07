@@ -1,0 +1,8 @@
+{
+  "plugins": [
+    "./config/stylelint-enforce-properties.js"
+  ],
+  "rules": {
+    "plugin/enforce-properties": true
+  }
+}

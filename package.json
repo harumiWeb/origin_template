@@ -17,6 +17,15 @@
     "nodemon": "^3.1.4",
     "postcss": "^8.4.39",
     "postcss-cli": "^11.0.0",
-    "sass": "^1.77.6"
+    "sass": "^1.77.6",
+    "stylelint": "^16.6.1"
+  },
+  "stylelint": {
+    "plugins": [
+      "./config/stylelint-enforce-properties.js"
+    ],
+    "rules": {
+      "plugin/enforce-properties": true
+    }
   }
 }
